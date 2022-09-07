@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Silkscreen&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Silkscreen', cursive;
+    color: white;
+    font-size: 250%;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+body{
+    background-color: rgb(11, 20, 32);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+#progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+}
+
+.game-container{
+    width: 90%;
+}
+
+#score-text{
+    font-size: 150%;
+    font-family: 'Silkscreen', cursive;
+
+}
+
+#question{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.choice-container{
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: darkblue;
+    margin: 10px;
+
+}
+.choice-container:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.row{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.correct{
+    background-color:seagreen;
+}
+
+.incorrect{
+    background-color:crimson;
+}
+
+@media (min-width: 992px){
+
+    .col-3{
+        width: 25%;
+        float: left;
+    }
+
+    
+}
+
+@media (min-width:601px) and (max-width:991px){
+
+    .col-6{
+        width: 50%;
+        float: left;
+    }
+}
+
+
+@media (max-width:600px) {
+
+    .col-12{
+        width: 100%;
+        float: left;
+    }
+}
